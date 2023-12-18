@@ -1,12 +1,10 @@
-import { Search, ShoppingCart, User } from "lucide-react"
+import { Rocket, Search, ShoppingCart, User } from "lucide-react"
 import Link from "next/link"
 
 export const Navbar = () => {
     return (
         <nav className="py-4 flex flex-row justify-between items-center">
-            <Link href="/" className="text-2xl font-extrabold">
-                Lorem Ipsum
-            </Link>
+            <Link href="/" className="text-2xl font-extrabold flex items-center gap-2">Rocket Shop <Rocket /></Link>
 
             <div className="w-1/3 bg-gray-100 rounded-md px-4 py-3 flex items-center justify-between">
                 <input className="bg-transparent outline-none" type="text" placeholder="Procure por produtos" />

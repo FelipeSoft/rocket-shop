@@ -1,9 +1,9 @@
-import { Cards } from "@/components/Cards"
+import { Card } from "@/components/Card"
 import { Footer } from "@/components/Footer"
 import MainLayout from "@/layout/MainLayout"
+import { products } from "@/utils/products.list"
 
 const Index = () => {
-    // testando uma nova alteração....
     return (
         <MainLayout>
             <div className="flex-col h-56 w-full bg-pink-300 rounded-3xl flex items-center justify-center">
@@ -16,35 +16,49 @@ const Index = () => {
             </div>
             <br />
             <div className="bg-pink-200 px-6 py-4 rounded-md shadow-md  ">
-                <h3 className="text-black">
-                    Lorem Ipsum
-                </h3>
+                <h3 className="text-black">Produtos</h3>
             </div>
 
             <br />
 
-            <div className="mb-4 flex justify-between">
-                <Cards></Cards>
-                <Cards></Cards>
-                <Cards></Cards>
-                <Cards></Cards>
-                <Cards></Cards>
+            {/* Layout Anterior */}
+            {/* <div className="mb-4 flex justify-between">
+                <Card></Card>
+                <Card></Card>
+                <Card></Card>
+                <Card></Card>
+                <Card></Card>
             </div>
 
             <div className="mb-4 flex justify-between">
-                <Cards></Cards>
-                <Cards></Cards>
-                <Cards></Cards>
-                <Cards></Cards>
-                <Cards></Cards>
+                <Card></Card>
+                <Card></Card>
+                <Card></Card>
+                <Card></Card>
+                <Card></Card>
             </div>
 
             <div className="mb-4 flex justify-between">
-                <Cards></Cards>
-                <Cards></Cards>
-                <Cards></Cards>
-                <Cards></Cards>
-                <Cards></Cards>
+                <Card></Card>
+                <Card></Card>
+                <Card></Card>
+                <Card></Card>
+                <Card></Card>
+            </div> */}
+
+            {/* Layout Atual (Utilizando CSS GRID) */}
+
+            <div className="gap-8 grid grid-cols-5">
+                {products.map((product) => {
+                    return (
+                        <Card
+                            image={product.image}
+                            id={product.id}
+                            name={product.name}
+                            price={product.price}
+                        />
+                    )
+                })}
             </div>
             <Footer></Footer>
         </MainLayout>
