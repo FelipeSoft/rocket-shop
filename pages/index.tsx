@@ -3,6 +3,7 @@ import { Footer } from "@/components/Footer"
 import MainLayout from "@/layout/MainLayout"
 
 const Index = () => {
+    // testando uma nova alteração....
     return (
         <MainLayout>
             <div className="flex-col h-56 w-full bg-pink-300 rounded-3xl flex items-center justify-center">
