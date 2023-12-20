@@ -6,7 +6,7 @@ const Product = () => {
     return (
         <div className="flex justify-between">
             <div
-                className="h-screen w-1/3 flex justify-center items-center bg-pink-200"
+                className=" mh-screen w-1/3 flex justify-center items-center bg-pink-200"
                 style={{ backgroundImage: 'url("https://images-cdn.welcomesoftware.com/Zz0zZTliMjQ4MzhlNGExMWViYmJiMjFiZTI2ZWNmN2MzZA==")' }}
             >
                 <div>
