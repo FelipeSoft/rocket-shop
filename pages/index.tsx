@@ -11,14 +11,12 @@ const Index = () => {
                     GET FREE NEXT-DAY DELIVERY
                 </h2>
                 <p className="mb-4">With code: 20100</p>
-
                 <button className="bg-black text-white px-10 py-3 rounded-2xl">OK</button>
             </div>
             <br />
-            <div className="bg-pink-200 px-6 py-4 rounded-md shadow-md  ">
+            <div className="bg-pink-200 px-6 py-4 rounded-md shadow-md">
                 <h3 className="text-black">Produtos</h3>
             </div>
-
             <br />
 
             {/* Layout Anterior */}
@@ -29,7 +27,6 @@ const Index = () => {
                 <Card></Card>
                 <Card></Card>
             </div>
-
             <div className="mb-4 flex justify-between">
                 <Card></Card>
                 <Card></Card>
@@ -37,7 +34,6 @@ const Index = () => {
                 <Card></Card>
                 <Card></Card>
             </div>
-
             <div className="mb-4 flex justify-between">
                 <Card></Card>
                 <Card></Card>
@@ -47,7 +43,6 @@ const Index = () => {
             </div> */}
 
             {/* Layout Atual (Utilizando CSS GRID) */}
-
             <div className="gap-8 grid grid-cols-5">
                 {products.map((product) => {
                     return (
@@ -64,10 +59,5 @@ const Index = () => {
         </MainLayout>
     )
 }
-// Navbar
-// Carrinho
-// Página Inicial
-// Página de Produto (de um em específico)
-// Página de Pagamento
 
 export default Index
