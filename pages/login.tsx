@@ -1,6 +1,4 @@
-import { Navbar } from "@/components/NavBar";
-import MainLayout from "@/layout/MainLayout";
-import { BadgeCheckIcon, Key, Mail, Rocket } from "lucide-react";
+import { BadgeCheckIcon, Key, Mail } from "lucide-react";
 import Link from "next/link";
 
 const Product = () => {
